@@ -69,6 +69,21 @@ int main(int argc, char** argv) {
                 break;
             }
             
+            case '2':{ 
+                cout<<"	--------***Tabla de multiplicar***------- "<<endl<<endl;
+                do{
+                	cout<<"Ingrese un digito "; cin>> Num_ta;	
+				}while((Num_ta<1) || (Num_ta>10));
+				
+				for(int i=1;i<=20;i++){
+					
+					cout<<Num_ta<<" * "<<i<<" = "<<Num_ta*i<<endl;  
+				}
+				
+                getch(); 
+                break;
+                
+            }
         }
               // funcion de bucle
     } while ((opcion != '1') && (opcion != '2') && (opcion != '3') && (opcion != '4') && opcion != '5');
