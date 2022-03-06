@@ -103,7 +103,58 @@ int main(int argc, char** argv) {
 	            cout << "El promedio de numeros impares es: " << suma_impares/impares << endl;
                 getch(); 
                 break;
-            }6
+            }
+            
+            case '4':{ 
+                cout<<"	--------***Dias de la semana***------- "<<endl<<endl;
+               
+              int Dia;
+              
+                cout<<"\n\n Lunes (1)"<<endl;
+                cout<<" Martes (2)"<<endl;
+                cout<<" Miercoles (3)"<<endl;
+                cout<<" Jueves (4)"<<endl;
+                cout<<" Viernes (5)"<<endl;
+                cout<<" Sabado (6)"<<endl;
+                cout<<" Domingo(7)"<<endl;
+                cout<<"\n\nElija el dia: "<<endl;
+                cin>>Dia; 
+                
+                switch (Dia){
+                	
+            case 1:
+			   cout << "es un dia laborable"<< endl;
+			   break;
+			   
+			case 2:
+			   cout << "es un dia laborable"<< endl;
+			   break;
+			   
+		    case 3:
+			   cout << "es un dia laborable"<< endl;
+			   break;
+			   
+			case 4:
+			   cout << "es un dia laborable"<< endl;
+			   break;
+			   
+			case 5:
+			   cout << "es un dia laborable"<< endl;
+			   break;
+			   
+			case 6:
+			   cout << "es fin de semana"<< endl;
+			   break;
+			   
+			case 7:
+			   cout << "es fin de semana"<< endl;
+			   break;
+			   	
+				}
+              
+                getch(); 
+                break; 
+            }
         }
               // funcion de bucle
     } while ((opcion != '1') && (opcion != '2') && (opcion != '3') && (opcion != '4') && opcion != '5');
