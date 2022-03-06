@@ -84,6 +84,26 @@ int main(int argc, char** argv) {
                 break;
                 
             }
+            
+             case '3':{ 
+                cout<<"	--------***Calculo numero par e impar***------- "<<endl<<endl;
+                for (x=1;x<=10;x++) {
+	            cout << "Ingresa un numero" << endl;
+		        cin >> n;
+		         if (n%2==0) {
+		            	suma_pares = suma_pares+n;
+		                   	pares = pares+1;
+	       	} else {
+		         	suma_impares = suma_impares+n;
+		             	impares = impares+1;
+	         	}
+     	    }
+            	cout << "La suma de los numeros pares es: " << suma_pares << endl;
+             	cout << "Numeros pares: " << pares << endl;
+	            cout << "El promedio de numeros impares es: " << suma_impares/impares << endl;
+                getch(); 
+                break;
+            }6
         }
               // funcion de bucle
     } while ((opcion != '1') && (opcion != '2') && (opcion != '3') && (opcion != '4') && opcion != '5');
