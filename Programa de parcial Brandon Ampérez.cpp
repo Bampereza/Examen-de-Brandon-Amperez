@@ -155,6 +155,24 @@ int main(int argc, char** argv) {
                 getch(); 
                 break; 
             }
+            
+            case '5':{ 
+                cout<<"	--------***Validacion de password***------- "<<endl<<endl;
+               do {
+	                 	cout << "Ingrese usuario" << endl;
+	                   	cin >> usuario;
+	                	cout << "Ingrese su password" << endl;
+	                   	cin >> contra;
+		                conta = conta+1;
+	            } while (!(conta==3 || contra==12345));
+	                if (conta==3) {
+		                 cout << "Lo sentimos alcanzo el limite de intentos" << endl;
+          	} else {
+	              	cout << "Bienvenido al sistema bancario BA" << endl;
+           	}
+                getch(); 
+                break;
+            }
         }
               // funcion de bucle
     } while ((opcion != '1') && (opcion != '2') && (opcion != '3') && (opcion != '4') && opcion != '5');
